@@ -24,6 +24,4 @@ The goal of this repo is to provide examples of the most common use cases for vi
 ## 📒 Table of Contents
 
 - [Authorization](examples/authorization)
-- [Stripe Payments](examples/stripe-server)
 - [Video Player](examples/video-player)
-# examples
