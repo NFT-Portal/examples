@@ -1,0 +1,17 @@
+{
+  "name": "@nft-portal/examples",
+  "author": "NFT Portal <info@nft-portal.one>",
+  "homepage": "https://docs.portal.one",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Common recipes for getting started streaming directly from the blockchain",
+  "keywords": [
+    "video",
+    "audio",
+    "nft",
+    "ic"
+  ],
+  "workspaces": [
+    "examples/*"
+  ]
+}
