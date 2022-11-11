@@ -1247,7 +1247,7 @@
 
 "@dfinity/nns@^0.9.0":
   version "0.9.0"
-  resolved "https://registry.npmjs.org/@dfinity/nns/-/nns-0.9.0.tgz"
+  resolved "https://registry.yarnpkg.com/@dfinity/nns/-/nns-0.9.0.tgz#b4a1f2dd08e52994c739813d7710e0aebf7a27f8"
   integrity sha512-DWLbKuSpsu6pnaekUKkA1vodt9OxPnsjzfyrGEyOXwS9yUYx+6jaZxoviBHZ7Yn+QoUsoegDmqBmmMu7LV/U2g==
   dependencies:
     crc "^4.1.1"
@@ -1785,19 +1785,32 @@
     react-hook-videojs "^3.0.2"
     video.js "^7.19.2"
 
-"@nft-portal/portal-sdk@^0.3.8", "@nft-portal/portal-sdk@^0.3.9":
-  version "0.3.9"
-  resolved "https://registry.npmjs.org/@nft-portal/portal-sdk/-/portal-sdk-0.3.9.tgz"
-  integrity sha512-tff/Jq7i0W5133TrX4KGrS8Xkdj96vuyTJdzDKGvJMhsNB/UOp9YS8ohpVOG7k0z/jXT1HKIsCrvCSRayeKJBQ==
+"@nft-portal/portal-sdk@^0.3.15":
+  version "0.3.15"
+  resolved "https://registry.yarnpkg.com/@nft-portal/portal-sdk/-/portal-sdk-0.3.15.tgz#1a7f897530c441ae2e3a21c19defeb8e7c7b1693"
+  integrity sha512-4VAoYeI6fXWLqFhIb4n5k+UNYmG9IFytt9bzkNFUQIBa2V4+evyWSUuQuOm0OLkn9Xs6iw+9hLrevBQJ0ThR7g==
   dependencies:
     "@dfinity/agent" "^0.14.0"
     "@dfinity/candid" "^0.14.0"
     "@dfinity/principal" "^0.14.0"
+    buffer "^6.0.3"
 
 "@nft-portal/providers@^0.1.6":
   version "0.1.6"
-  resolved "https://registry.npmjs.org/@nft-portal/providers/-/providers-0.1.6.tgz"
+  resolved "https://registry.yarnpkg.com/@nft-portal/providers/-/providers-0.1.6.tgz#be2872635b5d3bf9496f6710c9c984fe1eee2f95"
   integrity sha512-230UFbDJekoxm9kRbzBFJiKex4KN0L5qQKboN9WMd8Jivkj2SdwQDT4Lu80VP9sYRC7vyasOtyfaxNKUjrmFFA==
+  dependencies:
+    "@dfinity/agent" "^0.14.0"
+    "@dfinity/auth-client" "^0.14.0"
+    "@dfinity/authentication" "^0.14.0"
+    "@dfinity/candid" "^0.14.0"
+    "@dfinity/identity" "^0.14.0"
+    "@dfinity/principal" "^0.14.0"
+
+"@nft-portal/providers@^0.1.8":
+  version "0.1.8"
+  resolved "https://registry.yarnpkg.com/@nft-portal/providers/-/providers-0.1.8.tgz#39238c9fbce6ef1e84cc45644917ea2650f10ae2"
+  integrity sha512-Xmtp3Qc8aMamN0QcmIDNofRGsjWqPDxFetlhqhS24NiWbNf8PpyQ2kiXE0eii/X//drzvGcnkAq6gg7BAa4Nlw==
   dependencies:
     "@dfinity/agent" "^0.14.0"
     "@dfinity/auth-client" "^0.14.0"
@@ -2257,17 +2270,7 @@
     "@types/qs" "*"
     "@types/range-parser" "*"
 
-"@types/express@*", "@types/express@^4.17.13":
-  version "4.17.14"
-  resolved "https://registry.npmjs.org/@types/express/-/express-4.17.14.tgz"
-  integrity sha512-TEbt+vaPFQ+xpxFLFssxUDXj5cWCxZJjIcB7Yg0k0GMHGtgtQgpvx/MUQUeAkNbA9AAGrwkAsoeItdTgS7FMyg==
-  dependencies:
-    "@types/body-parser" "*"
-    "@types/express-serve-static-core" "^4.17.18"
-    "@types/qs" "*"
-    "@types/serve-static" "*"
-
-"@types/express@^4.17.14":
+"@types/express@*", "@types/express@^4.17.13", "@types/express@^4.17.14":
   version "4.17.14"
   resolved "https://registry.yarnpkg.com/@types/express/-/express-4.17.14.tgz#143ea0557249bc1b3b54f15db4c81c3d4eb3569c"
   integrity sha512-TEbt+vaPFQ+xpxFLFssxUDXj5cWCxZJjIcB7Yg0k0GMHGtgtQgpvx/MUQUeAkNbA9AAGrwkAsoeItdTgS7FMyg==
@@ -3441,6 +3444,14 @@ buffer@^5.5.0:
   dependencies:
     base64-js "^1.3.1"
     ieee754 "^1.1.13"
+
+buffer@^6.0.3:
+  version "6.0.3"
+  resolved "https://registry.yarnpkg.com/buffer/-/buffer-6.0.3.tgz#2ace578459cc8fbe2a70aaa8f52ee63b6a74c6c6"
+  integrity sha512-FTiCpNxtwiZZHEZbcbTIcZjERVICn9yq/pDFkTl95/AxzD1naBctN7YO68riM/gLSDY7sdrMby8hofADYuuqOA==
+  dependencies:
+    base64-js "^1.3.1"
+    ieee754 "^1.2.1"
 
 builtin-modules@^3.1.0:
   version "3.3.0"
@@ -5717,7 +5728,7 @@ identity-obj-proxy@^3.0.0:
   dependencies:
     harmony-reflect "^1.4.6"
 
-ieee754@^1.1.13:
+ieee754@^1.1.13, ieee754@^1.2.1:
   version "1.2.1"
   resolved "https://registry.npmjs.org/ieee754/-/ieee754-1.2.1.tgz"
   integrity sha512-dcyqhDvX1C46lXZcVqCpK+FtMRQVdIMN6/Df5js2zouUsqG7I6sFxitIC+7KYK29KdXOLHdu9zL4sFnoVQnqaA==

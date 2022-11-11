@@ -24,6 +24,4 @@ yarn-error.log*
 
 .env
 
-buy-nft
-stripe-server
 claim-reward
