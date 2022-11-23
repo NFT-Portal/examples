@@ -25,3 +25,4 @@ The goal of this repo is to provide examples of the most common use cases for vi
 
 - [Authorization](examples/authorization)
 - [Video Player](examples/video-player)
+- [Wallet](examples/wallet)
