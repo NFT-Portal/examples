@@ -6,12 +6,14 @@
     "@dfinity/agent": "^0.14.0",
     "@nft-portal/portal-sdk": "^0.3.17",
     "@nft-portal/providers": "0.1.6",
-    "@nft-portal/wallet": "^0.1.8",
+    "@nft-portal/wallet": "^0.1.10",
     "assert": "^2.0.0",
     "crypto-browserify": "^3.12.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "stream": "^0.0.2"
+    "stream": "^0.0.2",
+    "formik": "^2.2.9",
+    "yup": "^0.32.11"
   },
   "scripts": {
     "start": "react-scripts start",

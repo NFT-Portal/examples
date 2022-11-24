@@ -4,8 +4,9 @@ import {
   claimNft,
   getAllOwnedNfts,
   getOwnedNftsInCollection,
-  NftDetails,
+  NftDetails
 } from '@nft-portal/wallet';
+import { TransferNftForm } from './TransferNftForm';
 
 const PORTAL_STAGING_NFT_COLLECTION_REGISTRY = 'wzsuw-xaaaa-aaaag-aa2pa-cai';
 
@@ -50,7 +51,10 @@ const Wallet = () => {
 
   return (
     <div>
-      {allNfts.map((meta) => (
+      <h1>
+        NFT List
+      </h1>
+      {allNfts.length > 0 ? allNfts.map((meta) => (
         <div
           style={{
             height: '200px',
@@ -59,7 +63,17 @@ const Wallet = () => {
             backgroundSize: 'cover',
           }}
         />
-      ))}
+      )) : <p>No NFTs found</p>}
+      <h1>
+        Claim functionality
+      </h1>
+      <button onClick={onClick}>
+        Attempt to Claim NFT
+      </button>
+
+      <h1>
+        Ownership Stats
+      </h1>
       <p>
         Total number of NFTs owned in Portal staging environment:{' '}
         {allNfts.length}
@@ -67,7 +81,28 @@ const Wallet = () => {
       <p>
         NFTs owned in Portal staging NFT collection: {nftsInCollection.length}
       </p>
-      <button onClick={onClick}>Attempt to Claim NFT</button>
+      {
+        allNfts.length > 0 ?
+        <>
+          <h1>
+            Transfer Functionality
+          </h1>
+          <p>
+            Transfer NFTS you own below
+          </p>
+          {
+            allNfts.map((nft, i) => 
+              <TransferNftForm 
+                nftCollectionId={nft.canisterId}
+                tokenId={nft.tokenId} 
+                agent={agent}
+                key={i}
+              />
+            )
+          }
+        </>
+        : null
+      }
     </div>
   );
 };
