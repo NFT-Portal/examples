@@ -1798,10 +1798,10 @@
     "@dfinity/identity" "^0.14.0"
     "@dfinity/principal" "^0.14.0"
 
-"@nft-portal/wallet@^0.1.10":
-  version "0.1.10"
-  resolved "https://registry.yarnpkg.com/@nft-portal/wallet/-/wallet-0.1.10.tgz#7307467016d379e75cb5acb6a5d093cb541efdb1"
-  integrity sha512-RplJNfBTJbjkQvJ9PEMqArtpMMlwpZVS1UyLlGEEFpaIJFj6tNxSjB67PPa8fmpQERa7rCscP7l/JXm+Xx+RMw==
+"@nft-portal/wallet@^0.1.11":
+  version "0.1.11"
+  resolved "https://registry.yarnpkg.com/@nft-portal/wallet/-/wallet-0.1.11.tgz#526b4e68427f79f87a18969c4fa33245eced99a2"
+  integrity sha512-cjiIRBcZcn4cK5/S2YIFgQk5cw1+JdkYdyMFa3BsBaRcpv7YysdOzpkzGxn2T8arE9SeKDnwm+IkeWqzxeKLXQ==
   dependencies:
     "@dfinity/agent" "^0.14.0"
     "@dfinity/nns" "^0.9.0"
