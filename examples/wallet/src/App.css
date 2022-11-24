@@ -18,3 +18,8 @@
 .errorText {
   color: red;
 }
+
+.column {
+  display: flex;
+  flex-direction: column;
+}

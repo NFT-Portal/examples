@@ -46,15 +46,24 @@ export const TransferNftForm = ({agent, nftCollectionId, tokenId}: Props) => {
     >
       {({ errors, touched }) => (
         <Form>
-           <div className="formRow">
-             <p>Collection ID: {nftCollectionId}</p>
-             <p>token ID: {tokenId}</p>
-             <Field name="accountId" type="accountId" />
-             <button type="submit">Submit</button>
-           </div>
-           <div className="errorText">
-             {errors.accountId && touched.accountId ? <div>{errors.accountId}</div> : null}
-           </div>
+          <div className="formRow">
+            <div className='column'>
+              <p>Collection ID</p>
+              <p>{nftCollectionId}</p>
+            </div>
+            <div>
+              <p>token ID</p>
+              <p>{tokenId}</p>
+            </div>
+            <div className='column'>
+              <p>AccountId</p>
+              <Field name="accountId" type="accountId" />
+            </div>
+            <button type="submit">Transfer</button>
+          </div>
+          <div className="errorText">
+            {errors.accountId && touched.accountId ? <div>{errors.accountId}</div> : null}
+          </div>
         </Form>
       )}
     </Formik>
