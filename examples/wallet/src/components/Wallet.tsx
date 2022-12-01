@@ -39,10 +39,12 @@ const Wallet = () => {
     fetchNftsInCollection();
   }, [agent]);
 
+  // Use the ID of your video. If it doesn't exist, you'll get an error.
+  const contentId = 'e5915008-468d-4a2d-ae20-f4d24674debd'
   const onClick = async () => {
     try {
       console.log('Attempting to claim NFT...');
-      const res = await claimNft(agent, PORTAL_STAGING_CHANNEL);
+      const res = await claimNft(agent, PORTAL_STAGING_CHANNEL, contentId);
       console.log('You are now the owner of the token: ', res);
     } catch (e) {
       console.error(e);
