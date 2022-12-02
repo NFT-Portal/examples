@@ -1777,10 +1777,10 @@
     react-hook-videojs "^3.0.2"
     video.js "^7.19.2"
 
-"@nft-portal/portal-sdk@^0.3.16", "@nft-portal/portal-sdk@^0.3.17":
-  version "0.3.17"
-  resolved "https://registry.yarnpkg.com/@nft-portal/portal-sdk/-/portal-sdk-0.3.17.tgz#1da860a4bc9f6909849eee952e5152ec4b352912"
-  integrity sha512-npmNE4ojN/8abYa7Y9SKOXs9Dih7J+CmPOL6zbC1HZgUsJ2EC3mZS7z31bQZYyHwwiJxl0lRLONPFBgAigmCaA==
+"@nft-portal/portal-sdk@^0.3.18", "@nft-portal/portal-sdk@^0.3.19":
+  version "0.3.19"
+  resolved "https://registry.yarnpkg.com/@nft-portal/portal-sdk/-/portal-sdk-0.3.19.tgz#18d34296918c55d0d48d9a4f059ccb0d4564252b"
+  integrity sha512-OX8QkqDrRLZL2L+0TOj6VdCaHDo1tg5gpu1KabuIGMKmhL4Jl7p721M/rDvdxOuUUzttsIyVg6HBBcuOFkwLfQ==
   dependencies:
     "@dfinity/agent" "^0.14.0"
     "@dfinity/candid" "^0.14.0"
@@ -1798,16 +1798,16 @@
     "@dfinity/identity" "^0.14.0"
     "@dfinity/principal" "^0.14.0"
 
-"@nft-portal/wallet@^0.1.12":
-  version "0.1.12"
-  resolved "https://registry.yarnpkg.com/@nft-portal/wallet/-/wallet-0.1.12.tgz#45a87f67e51e70b2510e76fd422087ff1077e527"
-  integrity sha512-3dk2bXjj2BC1SgmvIffQa2iqlpPd2Ch1eg5Bst+de1APHVwBy7qS0+av8AdSy6Cn5+6ovminL2p3UpAlcKeWvQ==
+"@nft-portal/wallet@^0.1.14":
+  version "0.1.14"
+  resolved "https://registry.yarnpkg.com/@nft-portal/wallet/-/wallet-0.1.14.tgz#9f114a726872f459cd4704e569d089892d753b25"
+  integrity sha512-dNXBvQxHz4tzUxYQaiX43pNdlrzpDuAJl8LoOTT3IlJ0ty0B6aLLSZ4TAhtdiVOlQet2NZczt05FHHJYO6EZ0A==
   dependencies:
     "@dfinity/agent" "^0.14.0"
     "@dfinity/nns" "^0.9.0"
     "@dfinity/principal" "^0.14.0"
     "@dfinity/utils" "^0.0.5"
-    "@nft-portal/portal-sdk" "^0.3.16"
+    "@nft-portal/portal-sdk" "^0.3.18"
     buffer "^6.0.3"
 
 "@nicolo-ribaudo/eslint-scope-5-internals@5.1.1-v1":
@@ -2388,7 +2388,7 @@
   dependencies:
     "@types/react" "*"
 
-"@types/react@*", "@types/react@^18.0.0", "@types/react@^18.0.24":
+"@types/react@*", "@types/react@^18.0.0", "@types/react@^18.0.24", "@types/react@^18.0.25":
   version "18.0.25"
   resolved "https://registry.yarnpkg.com/@types/react/-/react-18.0.25.tgz#8b1dcd7e56fe7315535a4af25435e0bb55c8ae44"
   integrity sha512-xD6c0KDT4m7n9uD4ZHi02lzskaiqcBxf4zi+tXZY98a04wvc0hi/TcCPC2FOESZi51Nd7tlUeOJY8RofL799/g==
